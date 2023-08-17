@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="150dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="20dp"
+    app:cardElevation="8dp"
+    android:layout_margin="10dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp">
+        <ImageView
+            android:id="@+id/mv_image"
+            android:layout_width="100dp"
+            android:layout_height="150dp"
+            android:src="@drawable/station_view3"
+            android:scaleType="centerCrop"/>
+
+        <TextView
+
+            android:id="@+id/mv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/mv_image"
+            android:fontFamily="@font/alata"
+            android:text="Tesla ev Station"
+            android:textColor="@color/black"
+            android:textSize="20dp" />
+        <RatingBar
+            android:id="@+id/mv_rating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            style="@style/Widget.AppCompat.RatingBar.Small"
+            android:layout_below="@+id/mv_title"
+            android:layout_toRightOf="@+id/mv_image"
+            android:progressTint="#FFCC01"
+            android:rating="3.5"/>
+        <TextView
+            android:id="@+id/mv_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mv_rating"
+            android:layout_toRightOf="@id/mv_image"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="4dp"
+            android:text="CFVX+86X, West Marredpally, Secunderabad"/>
+        <TextView
+            android:id="@+id/mv_watts2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mv_description"
+            android:layout_toRightOf="@id/mv_image"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="4dp"
+            android:text="Connector:30kw"/>
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

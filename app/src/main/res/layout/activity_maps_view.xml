@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MapsView">
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#FFC107"
+        android:padding="10dp">
+        <ImageButton
+            android:id="@+id/electric_station"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/baseline_ev_station_24"
+            android:padding="22dp"/>
+        <ImageButton
+            android:id="@+id/gas_station"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/baseline_local_gas_station_24"
+            android:padding="22dp"/>
+        <ImageButton
+            android:id="@+id/hotels"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/baseline_restaurant_24"
+            android:padding="22dp"/>
+        <ImageButton
+            android:id="@+id/ATM"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/baseline_local_atm_24"
+            android:padding="22dp"/>
+    </LinearLayout>
+
+    <fragment
+    android:id="@+id/map"
+    android:name="com.google.android.gms.maps.SupportMapFragment" android:layout_below="@id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" />
+</RelativeLayout>
